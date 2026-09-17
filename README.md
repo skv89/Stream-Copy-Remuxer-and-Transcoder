@@ -4,13 +4,13 @@
 
 Copy, convert and resize videos with the optimal, best quality presets already built in. The app handles the complicated settings for you. If you want to adjust quality or file size, change just one quality value and follow the built-in tips.
 
-## Download v1.0.0
+## Download v1.3.1
 
-[**Download for Windows**](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/raw/refs/tags/v1.0.0/Stream%20Copy%20Remuxer%20and%20Transcoder.exe) · [ZIP download](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/download/v1.0.0/Stream-Copy-Remuxer-and-Transcoder-Windows-x64.zip)
+[**Download for Windows**](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/raw/refs/tags/v1.3.1/Stream%20Copy%20Remuxer%20and%20Transcoder.exe) · [ZIP download](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/download/v1.3.1/Stream-Copy-Remuxer-and-Transcoder-v1.3.1-Windows-x64.zip)
 
 Open the app to begin. If you download the ZIP, extract it first.
 
-![A completed batch using different output formats and sizes](screenshots/completed-batch.png)
+![Choose formats, quality and job limits for your batch](screenshots/main-window-v1.3.1.png)
 
 ## Get started
 
@@ -33,6 +33,21 @@ By default, the app keeps video and audio. Use **Streams** if you also need subt
 
 Quality-first settings can take longer and produce larger files. Resizing changes the picture, including when using FFV1.
 
+## What's new in v1.3.1
+
+- **Run CPU and GPU jobs together.** Separate job limits let you choose how many files each processes at once. Available limits depend on your hardware.
+- **Choose software encoding effort.** Faster, Balanced, Quality and Extreme let you trade encoding time for compression. Quality is the default; Extreme can be very slow.
+- **Share a CPU worker budget.** Choose how many encoder workers software jobs share. Running jobs keep their allocation; this is not a hard limit on total CPU use.
+- **Choose your bit depth.** HEVC and AV1 offer **Match source** or **Prefer 10-bit**. The latter uses 10-bit output when supported; your player must support it.
+- **Edit a running queue.** Reorder or remove waiting files. Removing an active job asks for confirmation, stops that job and removes its unfinished output. Source files and completed outputs are preserved.
+- **Get a sense of output size.** Sample-based bitrate and size estimates help before encoding; progress shows measured bitrate and a projected size while encoding.
+- **Use GPU decoding when supported.** Compatible NVIDIA inputs use GPU decoding automatically, with CPU fallback when needed.
+- **Find help faster.** Larger headings, a Jump to menu, shorter explanations and benchmark tables help you choose settings.
+
+![Built-in benchmark examples help you choose CPU workers and job counts](screenshots/encoding-help-v1.3.1.png)
+
+Benchmark examples are guidance; speed depends on your video and hardware. More simultaneous jobs are not always faster.
+
 ## Requirements
 
 - **Windows 10 or 11, 64-bit.**
@@ -44,14 +59,14 @@ The app is not digitally signed, so Windows may show a security warning.
 <details>
 <summary>Download verification</summary>
 
-Version: **1.0.0**  
-File size: **19,692,082 bytes**  
+Version: **1.3.1**  
+File size: **19,863,750 bytes**  
 SHA-256:
 
 ```text
-3F56DBF1B8A76F86BF750F657410F0BC918BCDE7B89A4FC5B360A422A39D70D1
+29F701D7ADC8853A99B8CE1016682FC36AD0BEBDBFB6A14FADAB37289836757F
 ```
 
 </details>
 
-[Release notes](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/tag/v1.0.0) · [Third-party notices](THIRD_PARTY_NOTICES.md)
+[Release notes](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/tag/v1.3.1) · [Third-party notices](THIRD_PARTY_NOTICES.md)

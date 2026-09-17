@@ -1,18 +1,29 @@
-# Third-party notices
+# Third-Party Notices
 
-Stream Copy Remuxer and Transcoder includes the Python 3.11 runtime, Tcl/Tk, TkinterDnD2/TkDND and the PyInstaller bootloader. The runtime license texts are provided in this repository:
-
-- [Python 3.11 license](licenses/Python-3.11-LICENSE.txt)
-- [Tcl/Tk license](licenses/Tcl-Tk-license.terms)
-- [TkinterDnD2 MIT license](licenses/TkinterDnD2-MIT-LICENSE.txt)
-- [PyInstaller license and bootloader exception](licenses/PyInstaller-COPYING.txt)
-
-These notices concern third-party components; they do not publish or license this application's development source.
+Stream Copy Remuxer and Transcoder is packaged with Python 3.11, Tcl/Tk, TkinterDnD2/TkDND, and the PyInstaller bootloader. Their license texts are included in the release `licenses` folder.
 
 ## FFmpeg and FFprobe
 
-FFmpeg and FFprobe are **not bundled** in the executable or EXE-only release ZIP. The app first looks for a compatible matching pair on the computer. With the user's confirmation, it can download a Windows Full build from [gyan.dev](https://www.gyan.dev/ffmpeg/builds/), verify the provider-published SHA-256 and install it in a versioned folder beside the app. That separate download retains its own license and readme and is governed by its build configuration and GPLv3 terms.
+FFmpeg and FFprobe are **not distributed in this application package**. The application first invokes a compatible paired installation already present on the user's computer. If it is missing, older, or lacks required resizing filters, the user can choose to download the gyan.dev Windows Full release build linked by FFmpeg.org. The app verifies the provider-published SHA-256 checksum and installs the selected release into a versioned `ffmpeg` subfolder beside the app. That optional download remains governed by its own GPLv3 license and build configuration; its license and readme are retained. The system's Windows archive utility performs bounded extraction. Vulkan and CUDA support depend on separately installed graphics drivers; no driver or Vulkan SDK is redistributed or installed by the app.
 
-[FFmpeg project](https://ffmpeg.org/) · [TkinterDnD2 project](https://github.com/Eliav2/tkinterdnd2)
+FFmpeg project information: https://ffmpeg.org/
 
-Graphics drivers, Vulkan SDKs, CUDA toolkits, GPU firmware and AI models are not distributed or installed by this app. Optional NVIDIA/Vulkan features use the compatible driver already installed by the user.
+Windows build provider: https://www.gyan.dev/ffmpeg/builds/
+
+## TkinterDnD2 and TkDND
+
+TkinterDnD2 0.6.2 is an MIT-licensed Python wrapper and packaged Tk extension for native OLE2 drag-and-drop on Windows. See `licenses/TkinterDnD2-MIT-LICENSE.txt`.
+
+Project information: https://github.com/Eliav2/tkinterdnd2
+
+## Python
+
+Python Software Foundation License. See `licenses/Python-3.11-LICENSE.txt`.
+
+## Tcl/Tk
+
+BSD-style Tcl/Tk license. See `licenses/Tcl-Tk-license.terms`.
+
+## PyInstaller
+
+GPL license with the PyInstaller bootloader exception. See `licenses/PyInstaller-COPYING.txt`.
