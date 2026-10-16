@@ -6,7 +6,7 @@ Copy, convert and resize videos with the optimal, best quality presets already b
 
 ## Download v1.3.2
 
-[**Download for Windows**](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/download/v1.3.2/Stream%20Copy%20Remuxer%20and%20Transcoder.exe) · [ZIP download](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/download/v1.3.2/Stream-Copy-Remuxer-and-Transcoder-v1.3.2-Windows-x64.zip)
+[**Download for Windows**](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/download/v1.3.2/Stream.Copy.Remuxer.and.Transcoder.exe) · [ZIP download](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/download/v1.3.2/Stream-Copy-Remuxer-and-Transcoder-v1.3.2-Windows-x64.zip)
 
 Place the EXE in a writable folder and open it. Extract the ZIP first if you choose that download. Python is included; no separate Python installation is needed.
 
