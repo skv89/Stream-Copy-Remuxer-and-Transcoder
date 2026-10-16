@@ -6,9 +6,9 @@ Copy, convert and resize videos with the optimal, best quality presets already b
 
 ## Download v1.3.2
 
-[**Download for Windows**](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/download/v1.3.2/Stream.Copy.Remuxer.and.Transcoder.exe) · [ZIP download](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/download/v1.3.2/Stream-Copy-Remuxer-and-Transcoder-v1.3.2-Windows-x64.zip)
+[**Download for Windows — portable ZIP**](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/download/v1.3.2/Stream-Copy-Remuxer-and-Transcoder-v1.3.2-Windows-x64.zip)
 
-Place the EXE in a writable folder and open it. Extract the ZIP first if you choose that download. Python is included; no separate Python installation is needed.
+Extract the ZIP into a writable folder, then open **Stream Copy Remuxer and Transcoder.exe**. Python is included; no separate Python installation is needed.
 
 ![Light mode with more room for the file table](screenshots/main-light-v1.3.2.png)
 
@@ -65,4 +65,4 @@ SHA-256:
 
 </details>
 
-[Release notes](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/tag/v1.3.2) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Launcher source and license materials](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/download/v1.3.2/PyInstaller-6.16.0-portable-launcher-source.zip)
+[Release notes](https://github.com/skv89/Stream-Copy-Remuxer-and-Transcoder/releases/tag/v1.3.2) · [Third-party notices](THIRD_PARTY_NOTICES.md)

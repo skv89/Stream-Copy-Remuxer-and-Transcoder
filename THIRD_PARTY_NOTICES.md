@@ -34,6 +34,6 @@ BSD-style Tcl/Tk license. See `licenses/Tcl-Tk-license.terms`.
 
 GPL license with the PyInstaller bootloader exception. See `licenses/PyInstaller-COPYING.txt`.
 
-The PyInstaller 6.16.0 Windows bootloader was modified on 2026-10-15 to place extraction in `data/temp` beside the executable, handle literal percent characters in its path, and keep temporary work there. Upstream per-instance access restrictions and normal-exit cleanup are retained. The matching third-party source and changes are supplied in **PyInstaller-6.16.0-portable-launcher-source.zip** alongside the v1.3.2 release. This archive contains PyInstaller source, not the application's source.
+The PyInstaller 6.16.0 Windows bootloader was modified on 2026-10-15 to place extraction in `data/temp` beside the executable, handle literal percent characters in its path, and keep temporary work there. Upstream per-instance access restrictions and normal-exit cleanup are retained. The matching third-party source and changes are available in the repository’s [licensing folder](licenses/PyInstaller-6.16.0-portable-launcher-source.zip). These materials are not needed to run the app. This archive contains PyInstaller source, not the application's source.
 
 Project and license: https://pyinstaller.org/en/v6.16.0/license.html
