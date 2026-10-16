@@ -1,10 +1,12 @@
 # Third-Party Notices
 
-Stream Copy Remuxer and Transcoder is packaged with Python 3.11, Tcl/Tk, TkinterDnD2/TkDND, and the PyInstaller bootloader. Their license texts are included in the release `licenses` folder.
+Stream Copy Remuxer and Transcoder is packaged with Python 3.11, Tcl/Tk, TkinterDnD2/TkDND, and the PyInstaller bootloader. License texts are embedded in the EXE and copied to `data/documentation/licenses` on first launch.
 
 ## FFmpeg and FFprobe
 
-FFmpeg and FFprobe are **not distributed in this application package**. The application first invokes a compatible paired installation already present on the user's computer. If it is missing, older, or lacks required resizing filters, the user can choose to download the gyan.dev Windows Full release build linked by FFmpeg.org. The app verifies the provider-published SHA-256 checksum and installs the selected release into a versioned `ffmpeg` subfolder beside the app. That optional download remains governed by its own GPLv3 license and build configuration; its license and readme are retained. The system's Windows archive utility performs bounded extraction. Vulkan and CUDA support depend on separately installed graphics drivers; no driver or Vulkan SDK is redistributed or installed by the app.
+FFmpeg and FFprobe are not included in this executable or its ZIP. The app requires FFmpeg 9 or newer and a working, matching FFprobe. It checks its FFmpeg subfolders, manually copied tools beside the EXE, and then the system PATH. If needed, it offers to download FFmpeg Full directly from gyan.dev into the app's `ffmpeg` subfolder. The provider's builds are licensed under GPLv3; the downloaded package's license and readme are retained beside the tools.
+
+Downloads require confirmation, are verified against the provider's SHA-256 and are installed in a versioned `ffmpeg` subfolder beside the app. Existing system installations are read without being modified. No graphics driver or Vulkan SDK is redistributed or installed by the app.
 
 FFmpeg project information: https://ffmpeg.org/
 
@@ -20,6 +22,10 @@ Project information: https://github.com/Eliav2/tkinterdnd2
 
 Python Software Foundation License. See `licenses/Python-3.11-LICENSE.txt`.
 
+## Pillow
+
+Pillow 11.3.0 provides image support. Its license and bundled-library notices are included in `licenses/Pillow-LICENSE.txt`.
+
 ## Tcl/Tk
 
 BSD-style Tcl/Tk license. See `licenses/Tcl-Tk-license.terms`.
@@ -27,3 +33,7 @@ BSD-style Tcl/Tk license. See `licenses/Tcl-Tk-license.terms`.
 ## PyInstaller
 
 GPL license with the PyInstaller bootloader exception. See `licenses/PyInstaller-COPYING.txt`.
+
+The PyInstaller 6.16.0 Windows bootloader was modified on 2026-10-15 to place extraction in `data/temp` beside the executable, handle literal percent characters in its path, and keep temporary work there. Upstream per-instance access restrictions and normal-exit cleanup are retained. The matching third-party source and changes are supplied in **PyInstaller-6.16.0-portable-launcher-source.zip** alongside the v1.3.2 release. This archive contains PyInstaller source, not the application's source.
+
+Project and license: https://pyinstaller.org/en/v6.16.0/license.html
